@@ -1,10 +1,12 @@
 body {
     margin: 0;
     font-family: 'Unbounded', cursive;
+    background-color: #fff;
   }
   h1{
     font-size: 50px;
     font-weight: 900;
+    margin: 0;
   }
   .navbar {
     display: flex;
@@ -39,6 +41,15 @@ body {
     cursor: pointer;
     display: none;
   }
+  .logo{
+    display: flex;
+    position: relative;
+    right: 35%;
+  }
+  .logo img{
+    width: 60px;
+    height: 60px;
+  }
   
   .burger-icon {
     width: 30px;
@@ -69,6 +80,7 @@ body {
     }
     .navbar {
         display: flex;
+        /* position: fixed; */
         justify-content: space-between;
         align-items: center;
         background-color: #333333;
@@ -89,6 +101,7 @@ body {
     display: flex;
     width: 100%;
     position: relative;
+
 
   }
   .imgh{
@@ -112,15 +125,68 @@ body {
     position: absolute;
     display: flex;
     left: 10%;
-    top: 40%;
+    top: 30vh;
     flex: 1;
     color: #fff;
  }
  .right-h{
     position: absolute;
-    width: 50%;
-    right: 0;
+    right: 10%;
     display: flex;
     flex: 1;
     color: #fff;
+    top: 30vh;
+    flex-direction: column;
  }
+ .btnup{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border: none;
+    background-color: transparent;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 20px;
+    transition: transform 0.5s;
+    background-image: url(image/up.svg);
+ }
+ .btnup:hover {
+    transform: translateY(-10px); 
+}
+.btndown{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border: none;
+    background-color: transparent;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 20px;
+    transition: transform 0.5s;
+    background-image: url(image/down.svg);
+ }
+ .btndown:hover {
+    transform: translateY(10px); 
+}
+ @media (min-width: 768px) {
+.line{
+    width: 80%;
+    z-index: 1;
+    margin: auto;
+    background: #c7c7c7;
+    border: none;
+    height: 1px;
+    position: absolute;
+    right: 0;
+    left: 0;
+}}
+.page-indicator{
+    color: var(--gray-4, #BDBDBD);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 10px;
+    z-index: 2;
+}

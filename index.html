@@ -12,12 +12,10 @@
 <body>
     <nav class="navbar">
         <div class="burger-menu">
-          <div class="burger-icon">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-          </div>
-        </div>
+          <div class="burger-icon"></div>
+          <div class="burger-icon"></div>
+          <div class="burger-icon"></div>
+        </div><div class="logo"><img class="logo" src="image/logo.svg"></div>
         <ul class="menu">
           <li><a href="#">Головна</a></li>
           <li><a href="#">Про нас</a></li>
@@ -26,6 +24,7 @@
           <li><a href="#">Контакти</a></li>
         </ul>
       </nav>
+      <hr class="line">
       <div class="header">
         <div class="gallery">
             <img class="imgh gallery-photo" src="image/header.jpg">
@@ -38,8 +37,12 @@
             <h1>Mountain Travel</h1>
         </div>
         <div class="right-h">
-            <button class="prev-button"></button>
-            <button class="next-button"></button>
+            <button class="prev-button btnup"></button>
+            <div class="page-indicator">
+                <span id="current-page">01</span> \ <span id="total-pages">03</span>
+            </div>
+            <button class="next-button btndown"></button>
+            
         </div>
     </div>
       <script src="scripts.js"></script>

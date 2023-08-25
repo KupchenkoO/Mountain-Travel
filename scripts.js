@@ -25,7 +25,7 @@ const nextButton = document.querySelector('.next-button');
 const currentPageSpan = document.getElementById('current-page');
 const totalPagesSpan = document.getElementById('total-pages');
 
-let currentPhotoIndex = 1;
+let currentPhotoIndex = 0;
 
 function showPhoto(index) {
     galleryPhotos.forEach((photo, idx) => {
