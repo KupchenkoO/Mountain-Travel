@@ -23,6 +23,7 @@
           <li><a href="#">Відгуки</a></li>
           <li><a href="#">Контакти</a></li>
         </ul>
+        <button id="openPopup" class="carts"></button>
       </nav>
       <hr class="line">
       <div class="header">
@@ -46,54 +47,55 @@
         </div>
     </div>
     <div class="content">
-        <div class="item it-img1" data-id="1">
+        <div class="item" data-id="1">
             <img class="product-img" src="image/it1.jpg">
-            <h4 class="item-title">Глемпінг</h4>
-            <div class="price-p">400grn</div>
+                <h4 class="item-title">Глемпінг</h4>
+                <div class="price-p">400&#8372;</div>
             <div class="counterblock">
                 <button class="control" data-action="minus">-</button>
-                <div class="current" data-counter>1</div>
+                    <div class="current" data-counter>1</div>
                 <button class="control" data-action="plus">+</button>
              </div>
-             <button data-cart type="button" class="btnbuy">Додати</button>
+                <button data-cart type="button" class="btnbuy">Додати</button>
         </div>
         <div class="item" data-id="2">
-            <img class="it-img2" src="image/it2.jpg">
-               <img class="product-img" src="image/it2.jpg">
-            <h4 class="item-title">Амуніція</h4>
-            <div class="price-p">20grn</div>
+            <img class="product-img" src="image/it2.jpg">
+                <h4 class="item-title">Амуніція</h4>
+                <div class="price-p">20&#8372;</div>
             <div class="counterblock">
                 <button class="control" data-action="minus">-</button>
-                <div class="current" data-counter>1</div>
+                    <div class="current" data-counter>1</div>
                 <button class="control" data-action="plus">+</button>
              </div>
-             <button data-cart type="button" class="btnbuy">Додати</button>
+                <button data-cart type="button" class="btnbuy">Додати</button>
         </div>
-        <div class="item it-img3" data-id="3">
+        <div class="item" data-id="3">
             <img class="product-img" src="image/it3.jpg">
-            <h4 class="item-title">Трансфер</h4>
-            <div class="price-p">3000grn</div>
+                <h4 class="item-title">Трансфер</h4>
+                <div class="price-p">3000&#8372;</div>
             <div class="counterblock">
                 <button class="control" data-action="minus">-</button>
-                <div class="current" data-counter>1</div>
+                    <div class="current" data-counter>1</div>
                 <button class="control" data-action="plus">+</button>
              </div>
-             <button data-cart type="button" class="btnbuy">Додати</button>
+                <button data-cart type="button" class="btnbuy">Додати</button>
         </div>
-        <div class="item it-img4" data-id="4">
+        <div class="item" data-id="4">
             <img class="product-img" src="image/it4.jpg">
-            <h4 class="item-title">Інструктор</h4>
-            <div class="price-p">500grn</div>
+                <h4 class="item-title">Інструктор</h4>
+                <div class="price-p">500&#8372;</div>
             <div class="counterblock">
                 <button class="control" data-action="minus">-</button>
-                <div class="current" data-counter>1</div>
+                    <div class="current" data-counter>1</div>
                 <button class="control" data-action="plus">+</button>
              </div>
              <button data-cart type="button" class="btnbuy">Додати</button>
         </div>
     </div>
-    <div class="popup">
+    <button id="openPopup" class="carts"></button>
+    <div id="popup" class="popup">
     <div class="product-buy">
+        <span class="close" id="closePopup"> &#128473;</span>
         <!-- <div class="product-item" data-id="2">
         <div class="product-item-top">
             <div class="product-image">
@@ -114,7 +116,6 @@
         </div>
             </div> -->
     </div>
-    
     </div>
       <script src="scripts.js"></script>
 </body>

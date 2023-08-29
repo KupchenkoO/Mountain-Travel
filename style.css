@@ -100,7 +100,7 @@ body {
   .header{
     display: grid;
     position: relative;
-    box-shadow: #333 0px 10px 20px 0px;
+    box-shadow: #333 0px 0px 12px 0px;
     margin-bottom: 30px;
   }
   .imgh{
@@ -210,26 +210,15 @@ body {
     align-content: center;
     flex-wrap: wrap;
 }
-.it-img1{
-    
-    
-}
-.it-img2{
-    background-image: url(image/it1.jpg);
-    width: 100px;
-    height: 100px;
-    top: 10px;
-    position: absolute;
-    
-}
-.it-img3{
-    
-}
-.it-img4{
-    
-}
 .item-title{
     margin: 20px;
+    letter-spacing: 2px;
+}
+.price-p{
+    margin: 0 10px 10px;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+    color: #333;
 }
   button {
     font-size: 20px;
@@ -244,10 +233,12 @@ body {
     background-color: #67828ba1;
     border-radius: 10px;
     color: #fff;
+    transition: 1s;
   }
   .btnbuy:hover{
     background-color: #0d6f90bf;
-    transition: 1s ease-in-out;
+    transition: 1s;
+
   }
   .control{
     border-radius: 25px;
@@ -255,12 +246,17 @@ body {
     border: none;
     height: 30px;
     width: 30px;
+    cursor: pointer;
   }
 
   .counterblock{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #f0f0f0;
+    margin: auto;
+    padding: 5px;
+    border-radius: 15px;
   }
   .product-img{
     width: 100%;
@@ -270,14 +266,46 @@ body {
     align-items: center;
     border-radius: 10px 10px 0 0;
   }
-  .product-buy{
-    display: flex;
-    height: 500px;
-    width: 50%;
-    background-color: #d3d3d3;
-  }
+  
   .product-image{
     display: flex;
     height: 50px;
     width: 50px;
   }
+  .popup{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #33333375;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  .product-buy{
+    height: 70%;
+    width: 50%;
+    background-color: #fff;
+    padding: 20px;
+    overflow: auto;
+  }
+  .close{
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  @media (min-width: 768px) {
+  .carts{
+    height: 40px;
+    width: 40px;
+    background-image: url(image/cart.svg);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    right: -35%;
+  }
+}
