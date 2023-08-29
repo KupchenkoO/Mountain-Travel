@@ -109,7 +109,6 @@ body {
     filter: brightness(0.4);
     background-size: cover;
     justify-content: center;
-    position: relative;
     margin-top: -80px;
     width: 100%;
     height: 700px;
@@ -230,7 +229,7 @@ body {
     height: 40px;
     border: none;
     cursor: pointer;
-    background-color: #67828ba1;
+    background-color: rgb(43 57 63);
     border-radius: 10px;
     color: #fff;
     transition: 1s;
@@ -308,4 +307,83 @@ body {
     position: relative;
     right: -35%;
   }
+}
+.news-bg{
+    margin-bottom: -5px;
+    width: 100%;
+    height: 400px;
+}
+.news{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-color: #040808;
+
+}
+.news2{
+    display: flex;
+    width: 100%;
+    height: 700px;
+    background-color: #040808;
+
+}
+.left-news{
+    display: flex;
+    flex: 1;
+    padding: 50px;
+}
+.img-news{
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    border-radius: 15px;
+}
+.right-news{
+    display: flex;
+    flex: 1;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+    height: 400px;
+}
+.news-text{
+    color: #fff;
+}
+.photoblock{
+    display: flex;
+    position: relative;
+    justify-content: center;
+
+
+}
+.ph1{
+    position: absolute;
+    width: 20%;
+    height: 500px;
+    background-image: url(image/it123.jpg);
+    background-size: cover;
+    left: 10%;
+    top: -120px;
+    border-radius: 15px;
+}
+.ph2{
+    position: absolute;
+    width: 25%;
+    height: 500px;
+    background-image: url(image/it23.jpg);
+    background-size: cover;
+    top: -150px;
+    border-radius: 15px;
+}
+.ph3{
+    position: absolute;
+    width: 20%;
+    height: 500px;
+    background-image: url(image/it33.jpg);
+    background-size: cover;
+    right: 10%;
+    top: -120px;
+    border-radius: 15px;
 }

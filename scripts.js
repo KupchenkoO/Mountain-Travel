@@ -50,25 +50,9 @@ nextButton.addEventListener('click', () => {
     showPhoto(currentPhotoIndex);
 });
 
-
-// counter
-
-// console.log('Mountain Travel');
-
-// const btnMinus = document.querySelector('[data-action="minus"]');
-// const btnPlus = document.querySelector('[data-action="plus"]');
-// const counter = document.querySelector('[data-counter]');
-
-// btnMinus.addEventListener('click', function(){
-//     if (parseInt(counter.innerText) > 1){
-//     counter.innerText = --counter.innerText;
-//     }
-// });
-
-// btnPlus.addEventListener('click', function(){
-//     counter.innerText = ++counter.innerText;
-// });
-
+// totalPagesSpan.textContent = galleryPhotos.length.toString().padStart(2, '0'); 
+// showPhoto(currentPhotoIndex);
+// товари
 window.addEventListener('click', function (event) {
 
     let counter;
@@ -144,3 +128,5 @@ document.getElementById("openPopup").addEventListener('click', function(){
 document.getElementById("closePopup").addEventListener('click', function(){
     document.getElementById('popup').style.display = "none";
 });
+
+
