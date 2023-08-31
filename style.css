@@ -106,7 +106,17 @@ body {
   .imgh{
     display: flex;
     flex-direction: column;
-    filter: brightness(0.4);
+    filter: brightness(0.9);
+    background-size: cover;
+    justify-content: center;
+    margin-top: -80px;
+    width: 100%;
+    height: 700px;
+  }
+  .imgh2{
+    display: none;
+    flex-direction: column;
+    filter: brightness(0.9);
     background-size: cover;
     justify-content: center;
     margin-top: -80px;
@@ -237,7 +247,6 @@ body {
   .btnbuy:hover{
     background-color: #0d6f90bf;
     transition: 1s;
-
   }
   .control{
     border-radius: 25px;
@@ -323,7 +332,7 @@ body {
 .news2{
     display: flex;
     width: 100%;
-    height: 700px;
+    height: 600px;
     background-color: #040808;
 
 }
@@ -355,35 +364,96 @@ body {
     display: flex;
     position: relative;
     justify-content: center;
-
+    background-color: #040808;
 
 }
 .ph1{
-    position: absolute;
     width: 20%;
     height: 500px;
     background-image: url(image/it123.jpg);
     background-size: cover;
-    left: 10%;
-    top: -120px;
     border-radius: 15px;
+    margin-right: 40px;
 }
 .ph2{
-    position: absolute;
     width: 25%;
     height: 500px;
     background-image: url(image/it23.jpg);
     background-size: cover;
-    top: -150px;
     border-radius: 15px;
+    position: relative;
+    top: 90px;
+}
+.ph2:hover{
+    filter: brightness(0.4);
 }
 .ph3{
-    position: absolute;
     width: 20%;
     height: 500px;
     background-image: url(image/it33.jpg);
     background-size: cover;
-    right: 10%;
-    top: -120px;
     border-radius: 15px;
+    margin-left: 40px;
 }
+.txt-ph{
+    font-size: 20px;
+    opacity: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.txt-ph:hover{
+    font-size: 20px;
+    opacity: 1;
+    z-index: 2;
+    position: relative;
+}
+.videoblock{
+    display: flex;
+    height: 500px;
+    width: 100%;
+    background-color: rgb(16 71 70);
+    margin-top: -5px;
+}
+.video-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+.vtext{
+    width: 50%;
+    height: auto;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 70px;
+}
+.btn-v{
+    margin: 10px;
+    width: 30%;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(255 255 255);
+    border-radius: 2px;
+    color: #000;
+    transition: 1s;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: 'Unbounded', cursive;
+  }
+  .btn-v:hover{
+    background-color: rgb(163 163 163);
+    transition: 0.5s;
+  }
+  .back-bg{
+    width: 100%;
+    height: 500px;
+    background-color: #040808;
+  }

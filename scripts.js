@@ -25,8 +25,8 @@ const nextButton = document.querySelector('.next-button');
 const currentPageSpan = document.getElementById('current-page');
 const totalPagesSpan = document.getElementById('total-pages');
 
-let currentPhotoIndex = 1;
-
+let currentPhotoIndex = 0;
+showPhoto(currentPhotoIndex);
 function showPhoto(index) {
     galleryPhotos.forEach((photo, idx) => {
         if (idx === index) {
@@ -35,7 +35,6 @@ function showPhoto(index) {
             photo.style.display = 'none';
         }
     });
-
     const formattedIndex = (index + 1).toString().padStart(2, '0'); 
     currentPageSpan.textContent = formattedIndex;
 }
@@ -128,5 +127,4 @@ document.getElementById("openPopup").addEventListener('click', function(){
 document.getElementById("closePopup").addEventListener('click', function(){
     document.getElementById('popup').style.display = "none";
 });
-
 
