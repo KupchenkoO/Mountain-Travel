@@ -128,3 +128,19 @@ document.getElementById("closePopup").addEventListener('click', function(){
     document.getElementById('popup').style.display = "none";
 });
 
+
+
+
+
+const button = document.querySelector('.contbtn');
+const symbol = document.querySelector('.symbol');
+
+button.addEventListener('mouseenter', () => {
+  symbol.style.transform = 'translateX(-100%)';
+  symbol.style.opacity = '1';
+});
+
+button.addEventListener('mouseleave', () => {
+  symbol.style.transform = 'translateX(0)';
+  symbol.style.opacity = '0';
+});
